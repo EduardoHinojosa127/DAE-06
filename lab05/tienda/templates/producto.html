@@ -1,0 +1,9 @@
+{% extends "layout.html" %}
+{% block content %}
+<h1>{{producto.nombre}}</h1>
+<div class="card-body">
+    <p class="card-text">Precio: {{producto.precio}}</p>
+    <p class="card-text">Categoría: {{producto.categoria.nombre}}</p>
+    <p class="card-text">Stock en tienda: {{producto.stock}}</p>
+</div>
+{% endblock %}
